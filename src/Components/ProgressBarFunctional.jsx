@@ -13,7 +13,7 @@ const Component = () => {
             const intRef = setInterval(() => {
                 setCounter(counter => counter + 1);
             }, INTERVAL_TIME);
-            
+
             return () => clearInterval(intRef);
         }
     }, [isRunning]);
